@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:id="@+id/type_iv"/>
+    <LinearLayout
+        android:id="@+id/type_ly"
+        android:layout_toRightOf="@+id/type_iv"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="美女图片"
+            android:id="@+id/tv_big"
+            android:textColor="#000"
+            android:textSize="25sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清纯|可爱|性感"
+            android:id="@+id/tv_small"
+            android:textColor="#646060"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/type_arrow"
+        android:src="@mipmap/arrow"
+        android:layout_alignBottom="@+id/type_ly"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
