@@ -67,6 +67,13 @@ public class TypeFragment extends Fragment {
 
     class MyTypeAdapter extends BaseAdapter {
 
+        @Bind(R.id.type_iv)
+        ImageView typeIv;
+        @Bind(R.id.tv_big)
+        TextView tvBig;
+        @Bind(R.id.tv_small)
+        TextView tvSmall;
+
         @Override
         public int getCount() {
             return list.size();
@@ -86,16 +93,24 @@ public class TypeFragment extends Fragment {
         public View getView(int position, View convertView, ViewGroup parent) {
             TypeBean typebean = (TypeBean) getItem(position);
             View view;
-            if(convertView==null) {
+            ViewHolder holder;
+            if (convertView == null) {
                 view = LayoutInflater.from(getActivity()).inflate(R.layout.typefragment_item, null);
-            }else{
-                view=convertView;
+                holder=new ViewHolder(view);
+                view.setTag(holder);
+            } else {
+                view = convertView;
+                holder= (ViewHolder) view.getTag();
+                holder.tvBig.setText(null);
+                holder.tvSmall.setText(null);
+                holder.typeIv.setImageBitmap(null);
             }
             return view;
         }
 
 
     }
+
     static class ViewHolder {
         @Bind(R.id.type_iv)
         ImageView typeIv;
