@@ -15,10 +15,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/framelayout"
-        android:layout_weight="10"
+        android:layout_weight="14"
        />
     <android.support.design.widget.TabLayout
-        android:layout_weight="1"
+        android:layout_weight="0.50"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tablayout"/>

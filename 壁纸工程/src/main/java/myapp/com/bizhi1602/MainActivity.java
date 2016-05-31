@@ -75,8 +75,8 @@ public class MainActivity extends FragmentActivity {
 
     private void init() {
         list.add(new RecommendFragment());
-        list.add(new SearchFragment());
         list.add(new TypeFragment());
+        list.add(new SearchFragment());
         list.add(new MoreFragment());
         for (int i = 0; i <list.size() ; i++) {
             TabLayout.Tab tab=tablayout.newTab().setIcon(res[i]).setTag(i).setText(names[i]);

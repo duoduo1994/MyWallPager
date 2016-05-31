@@ -18,7 +18,6 @@
     <include android:id="@+id/l3" layout="@layout/more_item" />
     <include android:id="@+id/l4" layout="@layout/more_item" />
     <include android:id="@+id/l5" layout="@layout/more_item" />
-    <include android:id="@+id/l6" layout="@layout/more_item" />
 
 
 </LinearLayout>
