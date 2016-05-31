@@ -5,6 +5,7 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -104,15 +105,6 @@ public class TypeFragment extends Fragment {
                                     data.get(i).getPicCategoryName(),
                             data.get(i).getDescWords(),
                                     data.get(i).getCategoryPic()));
-
-                           // imageTask2 it=new imageTask2();
-                            //bm=it.execute(data.get(i).getCategoryPic());
-//                            new imageTask2(new imageTask2.imgCallback() {
-//                                @Override
-//                                public void doCallback(Bitmap bitmap) {
-//                                    bm=bitmap;
-//                                }
-//                            }).execute(data.get(i).getCategoryPic());
                             myAdapter.notifyDataSetChanged();
                         }
                     }

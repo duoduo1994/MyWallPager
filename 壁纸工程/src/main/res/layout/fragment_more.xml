@@ -10,14 +10,14 @@
         即引用指定布局中的内容
     -->
     <include  android:id="@+id/l1" layout="@layout/more_item" />
-    <include android:id="@+id/l2" layout="@layout/more_item" />
+    <include android:id="@+id/l2" layout="@layout/more_item1" />
     <ImageView
         android:layout_width="match_parent"
         android:background="#cac4c4"
-        android:layout_height="2dp" />
-    <include android:id="@+id/l3" layout="@layout/more_item" />
-    <include android:id="@+id/l4" layout="@layout/more_item" />
-    <include android:id="@+id/l5" layout="@layout/more_item" />
+        android:layout_height="5dp" />
+    <include android:id="@+id/l3" layout="@layout/more_item2" />
+    <include android:id="@+id/l4" layout="@layout/more_item3" />
+    <include android:id="@+id/l5" layout="@layout/more_item4" />
 
 
 </LinearLayout>

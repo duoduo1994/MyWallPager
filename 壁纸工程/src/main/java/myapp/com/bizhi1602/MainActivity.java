@@ -1,11 +1,14 @@
 package myapp.com.bizhi1602;
 
+import android.app.ActionBar;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.widget.FrameLayout;
 
 import com.qf.fragment.MoreFragment;
@@ -19,12 +22,14 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 public class MainActivity extends FragmentActivity {
+    Toolbar bar;
     ArrayList<Fragment> list=new ArrayList<>();
     int[] res={R.drawable.recommend_item,
             R.drawable.type_item,
             R.drawable.search_item,
             R.drawable.more_item,};
     String[] names={"推荐","分类","搜索","更多"};
+    String[] titles={"壁纸精选","分类","","更多"};
     FragmentManager manager;
 
 
@@ -39,6 +44,8 @@ public class MainActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+        bar= (Toolbar) findViewById(R.id.bar);
+        bar.setTitle("壁纸精选");
         //1. 通过ButterKnife初始化控件
 
         //2. 创建一个集合，初始化4个Fragment对象
@@ -52,6 +59,7 @@ public class MainActivity extends FragmentActivity {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 int num=Integer.parseInt(tab.getTag().toString());
+                bar.setTitle(titles[num]);
                 if(!list.get(num).isAdded()){
                     manager.beginTransaction().add(R.id.framelayout, list.get(num)).commit();
                 }
@@ -83,4 +91,5 @@ public class MainActivity extends FragmentActivity {
             tablayout.addTab(tab);
         }
     }
+
 }

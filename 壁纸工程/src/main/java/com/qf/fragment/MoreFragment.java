@@ -1,5 +1,6 @@
 package com.qf.fragment;
 
+import android.app.ActionBar;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -18,18 +19,7 @@ import myapp.com.bizhi1602.R;
  */
 public class MoreFragment extends Fragment {
 
-//    @Bind(R.id.textView)
-//    TextView textView1;
-//    @Bind(R.id.textView)
-//    TextView textView2;
-//    @Bind(R.id.textView)
-//    TextView textView3;
-//    @Bind(R.id.textView)
-//    TextView textView4;
-//    @Bind(R.id.textView)
-//    TextView textView5;
-//    @Bind(R.id.textView)
-//    TextView textView6;
+
 
     @Nullable
     @Override
@@ -46,12 +36,6 @@ public class MoreFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         //3. 通过ButterKnife初始化控件
-//            textView1.setText("我的收藏");
-//        textView2.setText("我的下载");
-//        textView3.setText("推荐给好友");
-//        textView4.setText("给个好评");
-//        textView5.setText("设置");
-//        textView6.setText("检查更新");
         //4. 修改控件上的文字
     }
 

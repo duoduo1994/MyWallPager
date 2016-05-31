@@ -7,7 +7,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="我的收藏"
+        android:text="给个好评"
         android:textSize="20sp"
         android:textColor="#000"
         android:id="@+id/textView"
