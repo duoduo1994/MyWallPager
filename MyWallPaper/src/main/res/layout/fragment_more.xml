@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#cac4c4"
+    android:layout_height="match_parent">
+
+    <!--
+        将include中指定的布局作为当前布局的子控件
+        即引用指定布局中的内容
+    -->
+    <include  android:id="@+id/l1" layout="@layout/more_item" />
+    <include android:id="@+id/l2" layout="@layout/more_item1" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="#cac4c4"
+        android:layout_height="5dp" />
+    <include android:id="@+id/l3" layout="@layout/more_item2" />
+    <include android:id="@+id/l4" layout="@layout/more_item3" />
+    <include android:id="@+id/l5" layout="@layout/more_item4" />
+
+
+</LinearLayout>

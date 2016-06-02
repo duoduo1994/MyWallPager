@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="myapp.com.bizhi1602.MainActivity">
+
+    <!--处理页面页面布局，
+    可选的布局结构：
+    1. TabLayout+FrameLayout
+    2. RadioGroup+FrameLayout
+    -->
+    <RelativeLayout
+        android:id="@+id/rl_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#D5D5D5">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="标题"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorHeight="0dp"
+        app:tabSelectedTextColor="#09bb07" />
+
+
+</LinearLayout>
