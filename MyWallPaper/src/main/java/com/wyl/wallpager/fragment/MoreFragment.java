@@ -23,6 +23,7 @@ public class MoreFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         //1. 将返回值修改，加载fragment_more的布局
+
         View view = inflater.inflate(R.layout.fragment_more, null);
         ButterKnife.bind(this, view);
         return view;

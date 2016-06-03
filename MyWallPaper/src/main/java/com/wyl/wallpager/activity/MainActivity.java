@@ -23,7 +23,6 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 public class MainActivity extends FragmentActivity {
-    Toolbar bar;
     ArrayList<Fragment> list=new ArrayList<>();
     int[] res={R.drawable.recommend_item,
             R.drawable.type_item,
